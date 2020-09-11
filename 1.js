@@ -36,7 +36,7 @@ $(document).ready(function() {
 	});
 
 var khongLap = setInterval(function(){
-	alert('Canh bao xam nhap trai phep');
+	alert('Cám ơn đã dành thời gian thăm trang của tui!');
 	clearInterval(khongLap);
 },2000)
 
