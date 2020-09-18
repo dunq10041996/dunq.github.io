@@ -1,0 +1,139 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+.khoi1{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.khoi1-coDinh{
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	z-index: 5;
+	color: #0101ff;
+}
+
+.khoi1-trai{
+	position: absolute;
+	font-size: 	50px;
+	top: 50%;
+	left: 20px;
+	color: #1b1bc1;
+	z-index: 5;
+	transition: .4s;
+}
+
+.khoi1-phai{
+	position: absolute;
+	font-size: 	50px;
+	top: 50%;
+	right: 20px;
+	z-index: 5;
+	color: #1b1bc1;
+	transition: .4s;
+}
+
+.khoi1-trai:hover{
+	color: hotpink;
+}
+
+.khoi1-phai:hover{
+	color: hotpink;
+}
+
+.khoi1-menu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: .4s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.khoi1-menu.hienMenu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.khoi1-text{
+	padding-top: 200px;
+	margin-left: 50px;
+	font-size: 20px;
+	color: #35448e;
+	transition: .4s;
+	transition-delay: .5s;
+}	
+
+.khoi1-menu p{
+	padding-bottom: 20px;
+}	
+
+.khoi1-menu.hienMenu p{
+	animation: hienHien .5s forwards;
+	animation-delay: .5s;
+}
+
+@-webkit-keyframes hienHien{
+	0%{
+		opacity: 0;
+		transform: translateX(-100%);
+	}100%{
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.khoi1-nut{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 5;
+	margin: auto;
+}
+
+.khoi1-nut ul{
+	list-style: none;
+}
+
+.khoi1-nut ul li{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border-radius: 50%;
+	border: 1px solid deeppink;
+	text-indent: -9999px;
+	margin: 5px;
+	transition: .4s;
+}
+
+.khoi1-nut ul li:hover{
+	background: deeppink;
+	border: 1px solid hotpink;
+}
+
+.khoi1-nut ul li.mauNut{
+	background: deeppink;
+	border: 1px solid hotpink;
+}
+/*toi Khoi 2*/
+.khoi2{
+	width: 100%;
+	height: 2000px;
+	background: lightblue;
+}
