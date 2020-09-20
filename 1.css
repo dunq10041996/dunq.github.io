@@ -77,7 +77,7 @@ html, body{
 }
 
 .khoi1-menu.hienRa{
-	animation: diVaoNe .5s forwards;
+	animation: diVaoNe 1s forwards;
 }
 
 @-webkit-keyframes diVaoNe{
@@ -93,7 +93,7 @@ html, body{
 }
 
 .khoi1-menu.bienMat{
-	animation: bienMatNe .5s forwards;
+	animation: bienMatNe 1s forwards;
 }
 
 @-webkit-keyframes bienMatNe{
